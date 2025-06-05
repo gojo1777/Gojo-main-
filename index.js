@@ -703,15 +703,7 @@ editedMessage: {
   }, {})
 }	    
 
-const { handleReplyMessages } = require('./plugins/smovie.js'); // or wherever your code is
 
-conn.ev.on("messages.upsert", async (update) => {
-  try {
-    await handleReplyMessages(conn, update);
-  } catch (e) {
-    console.error(e);
-  }
-});
       
 
 //==================================Button================================
